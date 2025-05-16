@@ -42,7 +42,6 @@
     //    Después de procesar (o no) el borrado, pedimos al controlador
     //    que nos devuelva todos los registros de la tabla 'personas'
     $roles = ControladorRol::ctrListarRoles();
-    var_dump($roles);
 ?>
 
 
@@ -66,7 +65,7 @@
                                 </span>
                             </div>
             
-                            <input type="text" class="form-control" id="nombre" name="registroNombre">
+                            <input type="text" class="form-control" id="nombre" name="registroNombre" minlength="5" maxlength="20" pattern="[a-zA-Z]+" required>
             
                         </div>
                         
@@ -83,7 +82,7 @@
                                 </span>
                             </div>
             
-                            <input type="text" class="form-control" id="telefono" name="registroTelefono">
+                            <input type="text" class="form-control" id="telefono" name="registroTelefono" minlength="10" maxlength="15" pattern="[0-9+]+" required>
             
                         </div>
                         
@@ -101,7 +100,7 @@
                                 </span>
                             </div>
             
-                            <input type="email" class="form-control" id="email" name="registroEmail">
+                            <input type="email" class="form-control" id="email" name="registroEmail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" required>
                         
                         </div>
                         
@@ -143,7 +142,7 @@
                                 </span>
                             </div>
             
-                            <input type="password" class="form-control" id="pwd" name="registroClave">
+                            <input type="password" class="form-control" id="pwd" name="registroClave" required>
             
                         </div>
             
