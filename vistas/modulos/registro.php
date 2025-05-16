@@ -65,7 +65,7 @@
                                 </span>
                             </div>
             
-                            <input type="text" class="form-control" id="nombrePersona" name="registroNombre" minlength="5" maxlength="20" pattern="[a-zA-Z]+" required>
+                            <input type="text" class="form-control" id="nombrePersona" name="registroNombre" minlength="5" maxlength="30" pattern="[a-zA-Z]+" required>
             
                         </div>
                         
@@ -82,7 +82,7 @@
                                 </span>
                             </div>
             
-                            <input type="text" class="form-control" id="telefono" name="registroTelefono" minlength="10" maxlength="15" pattern="[0-9+]+" required>
+                            <input type="text" class="form-control" id="telefonoPersona" name="registroTelefono" minlength="10" maxlength="15" pattern="[0-9+]+" required>
             
                         </div>
                         
@@ -100,7 +100,7 @@
                                 </span>
                             </div>
             
-                            <input type="email" class="form-control" id="email" name="registroEmail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" required>
+                            <input type="email" class="form-control" id="emailPersona" name="registroEmail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" required>
                         
                         </div>
                         
@@ -142,7 +142,7 @@
                                 </span>
                             </div>
             
-                            <input type="password" class="form-control" id="pwd" name="registroClave" required>
+                            <input type="password" class="form-control" id="clavePersona" name="registroClave" required>
             
                         </div>
             
