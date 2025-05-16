@@ -9,9 +9,9 @@ class ModeloRegistro {
     =============================================*/
     static public function mdlRegistro($tabla, $datos){
         $sql = "INSERT INTO {$tabla} 
-                    (pers_nombre, pers_telefono, pers_correo, pers_clave) 
+                    (pers_nombre, pers_telefono, pers_correo, pers_clave, fk_id_rol) 
                 VALUES 
-                    (:nombre, :telefono, :correo, :clave)";
+                    (:nombre, :telefono, :correo, :clave, :fk_id_rol)";
 
         $stmt = Conexion::conectar()->prepare($sql);
 
@@ -19,6 +19,7 @@ class ModeloRegistro {
         $stmt->bindParam(":telefono", $datos["telefono"], PDO::PARAM_STR);
         $stmt->bindParam(":correo",   $datos["correo"],   PDO::PARAM_STR);
         $stmt->bindParam(":clave",    $datos["clave"],    PDO::PARAM_STR);
+        $stmt->bindParam(":fk_id_rol",$datos["fk_id_rol"],PDO::PARAM_STR);
 
         $ok = $stmt->execute();
         $stmt->closeCursor();

@@ -24,7 +24,7 @@
                 <?php
 
                     session_start();
-
+                  
                     $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : 'ingreso';
 
                     if (!isset($_SESSION["validarIngreso"]) || $_SESSION["validarIngreso"] !== "ok") {
