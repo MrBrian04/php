@@ -65,7 +65,7 @@
                                 </span>
                             </div>
             
-                            <input type="text" class="form-control" id="nombre" name="registroNombre" minlength="5" maxlength="20" pattern="[a-zA-Z]+" required>
+                            <input type="text" class="form-control" id="nombrePersona" name="registroNombre" minlength="5" maxlength="20" pattern="[a-zA-Z]+" required>
             
                         </div>
                         
