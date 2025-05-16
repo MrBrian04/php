@@ -23,7 +23,7 @@ nombrePersona.addEventListener('blur', () => {
     }
 
     const valor = nombrePersona.value.trim();
-    if (valor === '') return; // 👈 Si está vacío, no validar
+    if (valor === '') return; // <-- Si está vacío, no validar
 
     if (!nombreRegex.test(valor)) {
         alert('Por favor, ingresa un nombre válido (solo letras y espacios).');
